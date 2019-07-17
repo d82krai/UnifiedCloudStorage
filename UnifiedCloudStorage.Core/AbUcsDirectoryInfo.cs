@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace UnifiedCloudStorage.Core
 {
-    public abstract class UcsDirectoryInfo
+    public abstract class AbUcsDirectoryInfo
     {
 
         ////
@@ -50,7 +50,7 @@ namespace UnifiedCloudStorage.Core
         // Exceptions:
         //   T:System.Security.SecurityException:
         //     The caller does not have the required permission.
-        public UcsDirectoryInfo Parent { get; }
+        public AbUcsDirectoryInfo Parent { get; }
         //
         // Summary:
         //     Gets the name of this System.IO.UcsDirectoryInfo instance.
@@ -75,7 +75,7 @@ namespace UnifiedCloudStorage.Core
         // Exceptions:
         //   T:System.Security.SecurityException:
         //     The caller does not have the required permission.
-        public UcsDirectoryInfo Root { get; }
+        public AbUcsDirectoryInfo Root { get; }
 
         //
         // Summary:
@@ -162,7 +162,7 @@ namespace UnifiedCloudStorage.Core
         //
         //   T:System.NotSupportedException:
         //     path contains a colon character (:) that is not part of a drive label ("C:\").
-        public abstract UcsDirectoryInfo CreateSubdirectory(string path);
+        public abstract AbUcsDirectoryInfo CreateSubdirectory(string path);
         //
         // Summary:
         //     Creates a subdirectory or subdirectories on the specified path with the specified
@@ -209,7 +209,7 @@ namespace UnifiedCloudStorage.Core
         //   T:System.NotSupportedException:
         //     path contains a colon character (:) that is not part of a drive label ("C:\").
         [SecuritySafeCritical]
-        public abstract UcsDirectoryInfo CreateSubdirectory(string path, DirectorySecurity directorySecurity);
+        public abstract AbUcsDirectoryInfo CreateSubdirectory(string path, DirectorySecurity directorySecurity);
         //
         // Summary:
         //     Deletes this instance of a System.IO.UcsDirectoryInfo, specifying whether to delete
@@ -295,7 +295,7 @@ namespace UnifiedCloudStorage.Core
         //
         //   T:System.Security.SecurityException:
         //     The caller does not have the required permission.
-        public abstract IEnumerable<UcsDirectoryInfo> EnumerateDirectories(string searchPattern, SearchOption searchOption);
+        public abstract IEnumerable<AbUcsDirectoryInfo> EnumerateDirectories(string searchPattern, SearchOption searchOption);
         //
         // Summary:
         //     Returns an enumerable collection of directory information in the current directory.
@@ -310,7 +310,7 @@ namespace UnifiedCloudStorage.Core
         //
         //   T:System.Security.SecurityException:
         //     The caller does not have the required permission.
-        public abstract IEnumerable<UcsDirectoryInfo> EnumerateDirectories();
+        public abstract IEnumerable<AbUcsDirectoryInfo> EnumerateDirectories();
         //
         // Summary:
         //     Returns an enumerable collection of directory information that matches a specified
@@ -336,7 +336,7 @@ namespace UnifiedCloudStorage.Core
         //
         //   T:System.Security.SecurityException:
         //     The caller does not have the required permission.
-        public abstract IEnumerable<UcsDirectoryInfo> EnumerateDirectories(string searchPattern);
+        public abstract IEnumerable<AbUcsDirectoryInfo> EnumerateDirectories(string searchPattern);
         //
         // Summary:
         //     Returns an enumerable collection of file information that matches a specified
@@ -445,7 +445,7 @@ namespace UnifiedCloudStorage.Core
         //
         //   T:System.Security.SecurityException:
         //     The caller does not have the required permission.
-        public abstract IEnumerable<UcsFileSystemInfo> EnumerateFileSystemInfos(string searchPattern, SearchOption searchOption);
+        public abstract IEnumerable<AbUcsFileSystemInfo> EnumerateFileSystemInfos(string searchPattern, SearchOption searchOption);
         //
         // Summary:
         //     Returns an enumerable collection of file system information that matches a specified
@@ -471,7 +471,7 @@ namespace UnifiedCloudStorage.Core
         //
         //   T:System.Security.SecurityException:
         //     The caller does not have the required permission.
-        public abstract IEnumerable<UcsFileSystemInfo> EnumerateFileSystemInfos(string searchPattern);
+        public abstract IEnumerable<AbUcsFileSystemInfo> EnumerateFileSystemInfos(string searchPattern);
         //
         // Summary:
         //     Returns an enumerable collection of file system information in the current directory.
@@ -486,7 +486,7 @@ namespace UnifiedCloudStorage.Core
         //
         //   T:System.Security.SecurityException:
         //     The caller does not have the required permission.
-        public abstract IEnumerable<UcsFileSystemInfo> EnumerateFileSystemInfos();
+        public abstract IEnumerable<AbUcsFileSystemInfo> EnumerateFileSystemInfos();
         //
         // Summary:
         //     Gets a System.Security.AccessControl.DirectorySecurity object that encapsulates
@@ -553,7 +553,7 @@ namespace UnifiedCloudStorage.Core
         //
         //   T:System.UnauthorizedAccessException:
         //     The caller does not have the required permission.
-        public abstract UcsDirectoryInfo[] GetDirectories();
+        public abstract AbUcsDirectoryInfo[] GetDirectories();
         //
         // Summary:
         //     Returns an array of directories in the current System.IO.UcsDirectoryInfo matching
@@ -583,7 +583,7 @@ namespace UnifiedCloudStorage.Core
         //
         //   T:System.UnauthorizedAccessException:
         //     The caller does not have the required permission.
-        public abstract UcsDirectoryInfo[] GetDirectories(string searchPattern);
+        public abstract AbUcsDirectoryInfo[] GetDirectories(string searchPattern);
         //
         // Summary:
         //     Returns an array of directories in the current System.IO.UcsDirectoryInfo matching
@@ -620,7 +620,7 @@ namespace UnifiedCloudStorage.Core
         //
         //   T:System.UnauthorizedAccessException:
         //     The caller does not have the required permission.
-        public abstract UcsDirectoryInfo[] GetDirectories(string searchPattern, SearchOption searchOption);
+        public abstract AbUcsDirectoryInfo[] GetDirectories(string searchPattern, SearchOption searchOption);
         //
         // Summary:
         //     Returns a file list from the current directory.
@@ -707,7 +707,7 @@ namespace UnifiedCloudStorage.Core
         // Exceptions:
         //   T:System.IO.DirectoryNotFoundException:
         //     The path is invalid (for example, it is on an unmapped drive).
-        public abstract UcsFileSystemInfo[] GetFileSystemInfos();
+        public abstract AbUcsFileSystemInfo[] GetFileSystemInfos();
         //
         // Summary:
         //     Retrieves an array of System.IO.UcsFileSystemInfo objects that represent the files
@@ -744,7 +744,7 @@ namespace UnifiedCloudStorage.Core
         //
         //   T:System.Security.SecurityException:
         //     The caller does not have the required permission.
-        public abstract UcsFileSystemInfo[] GetFileSystemInfos(string searchPattern, SearchOption searchOption);
+        public abstract AbUcsFileSystemInfo[] GetFileSystemInfos(string searchPattern, SearchOption searchOption);
         //
         // Summary:
         //     Retrieves an array of strongly typed System.IO.UcsFileSystemInfo objects representing
@@ -773,7 +773,7 @@ namespace UnifiedCloudStorage.Core
         //
         //   T:System.Security.SecurityException:
         //     The caller does not have the required permission.
-        public abstract UcsFileSystemInfo[] GetFileSystemInfos(string searchPattern);
+        public abstract AbUcsFileSystemInfo[] GetFileSystemInfos(string searchPattern);
         //
         // Summary:
         //     Moves a System.IO.UcsDirectoryInfo instance and its contents to a new path.

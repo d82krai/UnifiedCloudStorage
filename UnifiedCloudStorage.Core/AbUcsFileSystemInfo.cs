@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace UnifiedCloudStorage.Core
 {
-    public abstract class UcsFileSystemInfo
+    public abstract class AbUcsFileSystemInfo
     {
 
         ////

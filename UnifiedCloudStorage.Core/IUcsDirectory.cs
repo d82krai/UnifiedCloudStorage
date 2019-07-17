@@ -51,7 +51,7 @@ namespace UnifiedCloudStorage.Core
         //   T:System.NotSupportedException:
         //     path contains a colon character (:) that is not part of a drive label ("C:\").
         [SecuritySafeCritical]
-        UcsDirectoryInfo CreateDirectory(string path);
+        AbUcsDirectoryInfo CreateDirectory(string path);
         //
         // Summary:
         //     Creates all the directories in the specified path, unless the already exist,
@@ -94,7 +94,7 @@ namespace UnifiedCloudStorage.Core
         //   T:System.NotSupportedException:
         //     path contains a colon character (:) that is not part of a drive label ("C:\").
         [SecuritySafeCritical]
-        UcsDirectoryInfo CreateDirectory(string path, DirectorySecurity directorySecurity);
+        AbUcsDirectoryInfo CreateDirectory(string path, DirectorySecurity directorySecurity);
         //
         // Summary:
         //     Deletes the specified directory and, if indicated, any subdirectories and files
@@ -1343,7 +1343,7 @@ namespace UnifiedCloudStorage.Core
         //
         //   T:System.IO.DirectoryNotFoundException:
         //     The specified path was not found.
-        UcsDirectoryInfo GetParent(string path);
+        AbUcsDirectoryInfo GetParent(string path);
         //
         // Summary:
         //     Moves a file or a directory and its contents to a new location.

@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace UnifiedCloudStorage.Core
 {
-    public abstract class UcsFileInfo
+    public abstract class AbUcsFileInfo
     {
 
         ////
@@ -59,7 +59,7 @@ namespace UnifiedCloudStorage.Core
         //
         //   T:System.Security.SecurityException:
         //     The caller does not have the required permission.
-        public UcsDirectoryInfo Directory { get; }
+        public AbUcsDirectoryInfo Directory { get; }
         //
         // Summary:
         //     Gets a string representing the directory's full path.
@@ -176,7 +176,7 @@ namespace UnifiedCloudStorage.Core
         //   T:System.NotSupportedException:
         //     destFileName contains a colon (:) within the string but does not specify the
         //     volume.
-        public abstract UcsFileInfo CopyTo(string destFileName);
+        public abstract AbUcsFileInfo CopyTo(string destFileName);
         //
         // Summary:
         //     Copies an existing file to a new file, allowing the overwriting of an existing
@@ -219,7 +219,7 @@ namespace UnifiedCloudStorage.Core
         //
         //   T:System.NotSupportedException:
         //     destFileName contains a colon (:) in the middle of the string.
-        public abstract UcsFileInfo CopyTo(string destFileName, bool overwrite);
+        public abstract AbUcsFileInfo CopyTo(string destFileName, bool overwrite);
         //
         // Summary:
         //     Creates a file.
@@ -599,7 +599,7 @@ namespace UnifiedCloudStorage.Core
         //   T:System.PlatformNotSupportedException:
         //     The current operating system is not Microsoft Windows NT or later.
         [ComVisible(false)]
-        public abstract UcsFileInfo Replace(string destinationFileName, string destinationBackupFileName);
+        public abstract AbUcsFileInfo Replace(string destinationFileName, string destinationBackupFileName);
         //
         // Summary:
         //     Replaces the contents of a specified file with the file described by the current
@@ -637,7 +637,7 @@ namespace UnifiedCloudStorage.Core
         //   T:System.PlatformNotSupportedException:
         //     The current operating system is not Microsoft Windows NT or later.
         [ComVisible(false)]
-        public abstract UcsFileInfo Replace(string destinationFileName, string destinationBackupFileName, bool ignoreMetadataErrors);
+        public abstract AbUcsFileInfo Replace(string destinationFileName, string destinationBackupFileName, bool ignoreMetadataErrors);
         //
         // Summary:
         //     Applies access control list (ACL) entries described by a System.Security.AccessControl.FileSecurity
