@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnifiedCloudStorage", "UnifiedCloudStorage\UnifiedCloudStorage.csproj", "{59D73F49-E205-471C-AEAC-4F91EF58F615}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleDriveWrapper", "GoogleDriveWrapper\GoogleDriveWrapper.csproj", "{BF86E846-EAB3-4842-92E1-F4B653EBDD09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnifiedCloudStorage.Core", "UnifiedCloudStorage.Core\UnifiedCloudStorage.Core.csproj", "{E56C2255-9441-41BF-A2F9-64977C1E19D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{59D73F49-E205-471C-AEAC-4F91EF58F615}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59D73F49-E205-471C-AEAC-4F91EF58F615}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59D73F49-E205-471C-AEAC-4F91EF58F615}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF86E846-EAB3-4842-92E1-F4B653EBDD09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF86E846-EAB3-4842-92E1-F4B653EBDD09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF86E846-EAB3-4842-92E1-F4B653EBDD09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF86E846-EAB3-4842-92E1-F4B653EBDD09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E56C2255-9441-41BF-A2F9-64977C1E19D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E56C2255-9441-41BF-A2F9-64977C1E19D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E56C2255-9441-41BF-A2F9-64977C1E19D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E56C2255-9441-41BF-A2F9-64977C1E19D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

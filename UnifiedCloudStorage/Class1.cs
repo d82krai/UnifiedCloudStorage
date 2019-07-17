@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace UnifiedCloudStorage
 {
-    public class Class1
+    class Class1
     {
+
+        public Class1()
+        {
+            //System.IO.FileInfo
+        }
+
     }
 }
