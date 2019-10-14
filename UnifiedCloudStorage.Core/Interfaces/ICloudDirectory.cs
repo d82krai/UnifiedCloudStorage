@@ -29,25 +29,25 @@ namespace UnifiedCloudStorage.Core
 
         ICloudDirectory Parent { get; set; }
 
-        Task Create(string directoryPath);
+        void Create(string directoryPath);
 
-        Task Rename(string sourceDirectoryPath, string newDirectoryName);
+        void Rename(string sourceDirectoryPath, string newDirectoryName);
 
-        Task MoveTo(string sourceDirectoryPath, string destiDirectoryPath);
+        void MoveTo(string sourceDirectoryPath, string destiDirectoryPath);
 
-        Task Delete(string directoryPath);
+        void Delete(string directoryPath);
 
-        Task CopyTo(string sourceDirectoryPath, string destiDirectoryPath);
+        void CopyTo(string sourceDirectoryPath, string destiDirectoryPath);
 
-        Task<bool> Exists(string directoryPath);
+        bool Exists(string directoryPath);
 
-        Task<List<string>> GetFiles(string directoryPath);
+        List<ICloudFile> GetFiles(string directoryPath);
 
-        Task<List<string>> GetAllFiles(string directoryPath);
+        List<ICloudFile> GetAllFiles(string directoryPath);
 
-        Task<List<string>> GetDirectories(string directoryPath);
+        List<ICloudFile> GetDirectories(string directoryPath);
 
-        Task<FileStream> Download();
+        FileStream Download();
 
     }
 }

@@ -34,8 +34,8 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -54,6 +54,10 @@
     <ProjectReference Include="..\GoogleDriveWrapper\GoogleDriveWrapper.csproj">
       <Project>{bf86e846-eab3-4842-92e1-f4b653ebdd09}</Project>
       <Name>GoogleDriveWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnifiedCloudStorage.Core\UnifiedCloudStorage.Core.csproj">
+      <Project>{E56C2255-9441-41BF-A2F9-64977C1E19D3}</Project>
+      <Name>UnifiedCloudStorage.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

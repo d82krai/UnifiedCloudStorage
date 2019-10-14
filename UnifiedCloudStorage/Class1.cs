@@ -14,12 +14,13 @@ namespace UnifiedCloudStorage
             
         }
 
-        public async void Test()
+        public void Test()
         {
             GoogleDriveWrapper.GDriveDirectory gDriveDirectory = new GoogleDriveWrapper.GDriveDirectory();
 
-            await gDriveDirectory.Create("Dir1");
-
+            //await gDriveDirectory.Create("Dir1");
+            var result = gDriveDirectory.GetAllFiles("Softwares/Data Recovery Licensed");
+            var result2 = gDriveDirectory.GetAllFiles("Data Recovery Licensed");
         }
 
     }
